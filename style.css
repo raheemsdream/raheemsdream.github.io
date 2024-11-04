@@ -1,0 +1,196 @@
+
+body {
+    display:flex;
+    flex-flow:column wrap;
+    gap:125px;
+    box-sizing: border-box;
+    border:0;
+    margin:0;
+}
+
+.grad{
+    background: linear-gradient(45deg, #b11313, #8C49F2);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color: transparent;
+}
+
+h1, h2, h3 {
+    font-family: 'Spartan';
+    font-size:48px;
+}
+h3{
+    font-family: 'League Spartan';
+    font-size:48px;
+    font-weight:lighter;
+    margin:0;
+} 
+p, button {
+    font-family: 'League Spartan';
+    font-size:24px;
+}
+
+
+
+
+.hero{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin:auto;
+    align-items:center;
+}
+
+.logo{
+    margin-top:150px;
+    margin-bottom: 100px;
+}
+.redButton{
+    background-color:#b11313;
+    color:white;
+    border:0;
+    border-radius:12px;
+    margin-right:15px;
+    padding:7px;
+}
+.purpleButton{
+    background-color: #8C49F2;
+    color:white;
+    border:0;
+    border-radius:12px;
+    margin-left:15px;
+    padding:7px;
+}
+
+
+
+
+
+
+
+
+
+
+.services{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items:center;
+}
+.services h2{
+    margin-top:150px;
+    margin-bottom:50px;
+
+}
+.maincontainer{ 
+    position:relative;
+    width:300px;
+    height: 300px;
+    margin-bottom:150px;
+}
+.thecard {
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+
+.theback {
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+}
+
+
+
+
+
+.contact{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    margin:0;
+    padding:0;
+    font-family: 'League Spartan';
+}
+form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    gap:50px;
+}
+.container{
+    width:680px;
+}
+
+.entryarea{
+    position:relative;
+    height:80px;
+    line-height: 80px;
+}
+input{
+    position:absolute;
+    width:100%;
+    outline:none;
+    font-size:24px;
+    padding:0 30px;
+    line-height: 80px;
+    border-radius:10px;
+    border:2px solid black;
+    background:transparent;
+    transition:0.1s ease;
+    z-index:1111;
+}
+.labelline{
+    position: absolute;
+    font-size:18px;
+    color: black;
+    padding: 0 25px;
+    margin:0 20px;
+    background-color:white;
+    transition: 0.2s ease;
+}
+.text:focus,
+.text:valid{
+    color:#b11313;
+    border:4px solid #8C49F2;
+}
+.text:focus + .labelline,
+.text:valid + .labelline{
+    color:#b11313;
+    height:30px;
+    line-height:30px;
+    padding:0 12px;
+    transform:translate(-15px,-16px) scale(0.88);
+    z-index:1111;
+}
+
+#submit{
+    width:150px;
+}
+
+.footer{
+    color:white;
+    background-color:#150B5E;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:175px;
+    padding:25px;
+}
+.footer p{
+    font-size:12px;
+}
